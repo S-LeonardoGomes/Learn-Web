@@ -170,3 +170,32 @@ section{
   background-color: var(--primary-color);
   transition: 150ms all ease-in-out;
 }
+
+/*********************************** Responsividade ***********************************/
+@media (max-width: 900px){
+  .quem-somos-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .quem-somos-grid img{
+    justify-self: center;
+  }
+
+  .onde-estamos-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .onde-estamos-grid .onde-estamos-flex{
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .onde-estamos-flex h1{
+    margin-bottom: 2rem;
+  }
+
+  .onde-estamos-flex a{
+    margin: 4rem 0rem 2rem 0rem;
+    padding: 1.5rem;
+  }
+}
