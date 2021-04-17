@@ -148,7 +148,7 @@ section{
 .back-to-top{
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  right: 2.5rem;
   width: 5rem;
   height: 5rem;
   background-color: var(--white-color);
@@ -212,7 +212,7 @@ input.close-menu{
   }
 
   .menu-flutuante-grid{
-    height: 100vh;
+    min-height: 100vh;
     padding: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -238,7 +238,7 @@ input.close-menu{
     position: fixed;
     z-index: 2;
     top: 2rem;
-    right: 2rem;
+    right: 2.5rem;
     background-color: var(--primary-color);
     color: var(--white-color);
     font-size: 3rem;
@@ -255,6 +255,6 @@ input.close-menu{
   }
 
   .close-menu:checked~.close-menu-label::after{
-    content: '✖';
+    content: 'X';
   }
 }
