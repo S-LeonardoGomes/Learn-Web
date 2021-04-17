@@ -10,10 +10,12 @@
     <link rel = "stylesheet" type = "text/css" href = "assets/css/styles.css">
   </head>
   <body>
+    <input type = "checkbox" id = "close-menu" class = "close-menu" aria-label="Fechar o menu" role = "button">
+    <label for = "close-menu" class = "close-menu-label" title = "Fechar o menu"></label>
     <aside class = "menu-flutuante">
       <nav class = "menu-flutuante-grid">
         <h1></h1>
-        <ul class = "menu-flutuante-flex">
+        <ul class = "menu-flutuante-flex" onclick = "getElementById('close-menu').checked = false;">
           <li><a href = "#quem-somos">Quem somos</a></li>
           <li><a href = "#onde-estamos">Onde estamos</a></li>
           <li><a href = "#produtos">Produtos</a></li>
