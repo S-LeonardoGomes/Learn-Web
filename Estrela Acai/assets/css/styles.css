@@ -1,0 +1,144 @@
+:root{
+  --white-color: #FFFFFF;
+  --primary-color: #5F0A87;
+  --secondary-color: #A4508B;
+}
+
+/* medium device
+  700px -> 1000px de largura
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #2E1A47;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+section{
+  background-color: var(--white-color);
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  padding: 5rem;
+}
+
+.menu-fixo{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+
+.menu-fixo-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+}
+
+.menu-fixo-flex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-fixo a{
+  font-size: 1.6rem;
+}
+
+/*********************************** Quem Somos ***********************************/
+
+.quem-somos{
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+}
+
+.quem-somos div, .onde-estamos div{
+  position: relative;
+  bottom: 3rem;
+}
+
+.quem-somos img{
+  width: 100%;
+}
+
+.quem-somos h1{
+  font-size: 8rem;
+}
+
+.quem-somos h2{
+  font-size: 2.5rem;
+  font-style: italic;
+  position: relative;
+  left: 8rem;
+  bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.quem-somos p{
+  max-width: 80%;
+}
+
+/*********************************** Onde estamos ***********************************/
+
+.onde-estamos{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 7rem;
+}
+
+.onde-estamos iframe{
+  width: 100%;
+  height: 60vh;
+}
+
+.onde-estamos h1{
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.onde-estamos a{
+  color: var(--primary-color);
+  font-weight: bold;
+  border: 1px solid var(--primary-color);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+
+.onde-estamos a:hover{
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.onde-estamos .flex-div{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
