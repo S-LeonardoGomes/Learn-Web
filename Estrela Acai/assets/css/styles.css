@@ -2,6 +2,7 @@
   --white-color: #FFFFFF;
   --primary-color: #5F0A87;
   --secondary-color: #A4508B;
+  --gap: 3rem;
 }
 
 /* medium device
@@ -31,114 +32,75 @@ ul{
   list-style: none;
 }
 
-a{
+a:link, a:visited, a:hover, a:active{
   text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 section{
   background-color: var(--white-color);
-  height: 100vh;
+  min-height: 100vh;
   width: 80vw;
   margin: auto;
   padding: 5rem;
 }
 
-.menu-fixo{
+/*********************************** Menu flutuante ***********************************/
+.menu-flutuante{
   position: fixed;
-  width: 100%;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*border-bottom: 0.2rem solid var(--primary-color);*/
   background-color: var(--white-color);
-  color: var(--primary-color);
-  font-weight: bold;
-  padding: 1rem 2rem;
+  z-index: 1;
 }
 
-.menu-fixo-grid{
+.menu-flutuante-grid{
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem 0rem 1rem 6rem;
 }
 
-.menu-fixo-flex{
+.menu-flutuante-flex{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-}
-
-.menu-fixo a{
   font-size: 1.6rem;
 }
 
 /*********************************** Quem Somos ***********************************/
+/*#quem-somos{
+  margin-top: 2rem;
+}*/
 
-.quem-somos{
+.quem-somos-grid{
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  justify-content: center;
   align-items: center;
+  gap: var(--gap);
 }
 
-.quem-somos div, .onde-estamos div{
+.quem-somos-grid div{
   position: relative;
-  bottom: 3rem;
 }
 
-.quem-somos img{
-  width: 100%;
-}
-
-.quem-somos h1{
+.quem-somos-grid h1{
   font-size: 8rem;
 }
 
-.quem-somos h2{
+.quem-somos-grid h2{
   font-size: 2.5rem;
   font-style: italic;
   position: relative;
-  left: 8rem;
   bottom: 1rem;
-  margin-bottom: 3rem;
-}
-
-.quem-somos p{
-  max-width: 80%;
-}
-
-/*********************************** Onde estamos ***********************************/
-
-.onde-estamos{
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  align-items: center;
-  gap: 7rem;
-}
-
-.onde-estamos iframe{
-  width: 100%;
-  height: 60vh;
-}
-
-.onde-estamos h1{
-  font-size: 5rem;
+  left: 7.6rem;
   margin-bottom: 2rem;
 }
 
-.onde-estamos a{
-  color: var(--primary-color);
-  font-weight: bold;
-  border: 1px solid var(--primary-color);
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border-radius: 2rem;
-}
-
-.onde-estamos a:hover{
-  color: var(--white-color);
-  background-color: var(--primary-color);
-  transition: all 200ms ease-in-out;
-}
-
-.onde-estamos .flex-div{
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+.quem-somos-grid img{
+  width: 80%;
+  justify-self: right;
 }
